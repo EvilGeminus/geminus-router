@@ -1,13 +1,12 @@
-# app.py
-from flask import Flask, request, jsonify
+from flask import Flask
+import os
+
 app = Flask(__name__)
 
-
-# A welcome message to test our server
 @app.route('/')
-def index():
-    return "<h1>Hello world!!</h1>"
+def hello_world():
+    return 'Hello, World!'
 
 if __name__ == '__main__':
-    # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
