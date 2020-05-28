@@ -1,1 +1,1 @@
-web: python main.py
+web: sudo haproxy -f haproxy.cfg

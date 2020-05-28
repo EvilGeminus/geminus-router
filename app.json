@@ -1,0 +1,5 @@
+{
+  "name": "Pilot Load Balancer",
+  "description": "A load balancer for pilot.co",
+  "image": "heroku/heroku"
+}
