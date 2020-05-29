@@ -1,7 +1,5 @@
 web:
   build: .
-  command: 'bash -c ''haproxy -f haproxy.cfg'''
-  working_dir: /app/user
   environment:
     PORT: 8080
   ports:
