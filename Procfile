@@ -1,1 +1,1 @@
-web: sudo haproxy -f haproxy.cfg
+web: sudo haproxy -f /etc/haproxy.cfg
